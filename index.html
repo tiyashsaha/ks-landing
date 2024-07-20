@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="Sports Center Logo">
+        </div>
+        <nav class="navbar">
+            <div class="navs">
+            <ul>               
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </div>
+        </nav>
+        <div class="auth">
+            <button id="loginBtn">Login</button>
+            <button id="signupBtn">Sign Up</button>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="content">
+            <h1>Welcome to the ARS KREEDASHALA Sports Hub & Center</h1>
+            <p>Join us for a variety of sports activities and events.Unleash the Champion Within.</p>
+            <div class="sports-images">
+                <img src="sport1.jpg" alt="Sport 1">
+                <img src="sport2.jpg" alt="Sport 2">
+                <img src="sport3.jpg" alt="Sport 3">
+                <img src="sport4.avif" alt="Sport 4">
+            </div>
+        </section>
+    </main>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input placeholder="enter username" type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input placeholder="enter password" type="password" id="password" name="password" required>
+                <button class="button"type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form>
+                <label for="newUsername">Name:</label>
+                <input type="text" id="newName" name="newName" required>
+                <label for="sports">Sports:</label>
+                   <select name="sports" id="sports">
+                   <option value="Select">-Select-</option>
+                   <option value="Cricket">Cricket</option>
+                   <option value="Badminton">Badminton</option>
+                   <option value="Football">Football</option>
+                   <option value="Kabaddi">Kabaddi</option>
+                   </select>
+                <label for="newUsername">Username:</label>
+                <input placeholder="create username" type="text" id="newUsername" name="newUsername" required>
+                <label for="newPassword">Password:</label>
+                <input placeholder="create password" type="password" id="newPassword" name="newPassword" required>
+                <button class="button" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        Author: Tiyash Saha<br>
+        <a href="support@kreedashala.org">support@kreedashala.org</a><br>
+        <br>
+        Address-India.
+    </footer>
+</body>
+</html>
